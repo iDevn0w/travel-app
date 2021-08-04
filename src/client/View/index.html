@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel App</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <header>
+        <nav>
+          <div class="text-header" id="locations">
+            <a href="#form"><i class="fas fa-map-marked-alt"></i></a>
+          </div>
+          <div class="text-header" id="logo">Trevel App</div>
+          <div class="contact">
+            <div class="text-header"><a href="#footer">Contact</a></div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section id="one">
+          <div id="img-container">
+            <!-- <img src="img/4873.jpg" alt="background-top" /> -->
+          </div>
+          <form id="form">
+            <label for="city">City</label>
+            <div class="animate-container-input">
+              <input
+                type="text"
+                name=""
+                id="city"
+                class="input"
+                autocomplete="off"
+              />
+              <span class="animate-border"></span>
+            </div>
+            <input type="date" name="" id="date" class="input"/>
+            <button id="btn" type="button">submit</button>
+          </form>
+          <div id="travel-info" class="travel-info">
+            <div id="pixabay"></div>
+            <div id="info">
+              <ul>
+                <li id="goingto"></li>
+                <li id="departing"></li>
+                <li id="temp"></li>
+              </ul>
+            </div>
+            <button type="button" class="btn" id="removeBtn">remove Trip</button>
+          </div>
+        </section>
+        <div id="rainbow">
+          <div class="color yellow"></div>
+          <div class="color green"></div>
+          <div class="color skyblue"></div>
+          <div class="color red"></div>
+          <div class="color blue"></div>
+          <div class="color purple"></div>
+        </div>
+        <section id="two">
+          <div class="container-two">
+            <div class="background-container">
+              <!-- <img src="img/555.jpg" alt="background" /> -->
+            </div>
+            <div class="about">
+              <h1>Travel app</h1>
+              <p>
+                Hello, i'm <i><mark>Shwan</mark></i
+                >, i'm front-end web developer, and in my track to become a
+                great developer i build this beautifull WebApp to complete my
+                final capstone project for udacity front-end web developer
+                nanodgree program. if you have any questions or want to advice
+                or fix some UI experiences or discover a bug, contact me plesae
+                <i><mark>feel free to contact.</mark></i>
+              </p>
+              <br />
+              <a
+                href="mailto:shwan.business@gmail.com
+              "
+                target="_blank"
+                ><i class="far fa-paper-plane">Email me</i></a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <h3>find me on</h3>
+        <div class="social-link">
+          <a href="https://github.com/iDevn0w" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://iq.linkedin.com/in/shwan-youssif-814436154?trk=public_profile_browsemap_profile-result-card_result-card_full-click"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/idevn0w" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <h5>
+          Copyright &copy shwan( iDevn0w ) | capstone fed-nanodgree program
+        </h5>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/e8d81683f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,431 @@
+  
+  @font-face {
+    font-family: Merriweather;
+    src: url(/src/client/View/media/font/Merriweather/Merriweather-LightItalic.ttf);
+  }  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fdfdfd;
+  }
+  .container{
+    display: grid;
+    grid-template-rows: repeat(4,minmax(1fr, 2fr));
+    grid-template-columns: 1fr;
+  }
+  .container #topBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    outline: none;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+  }
+  
+  #topBtn .fa-arrow-up {
+    font-size: 1.5rem;
+  }
+  
+  /* header and nav */
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+    nav {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(52, 58, 64);
+      color: #fff;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  
+  nav {
+    .text-header {
+      font-family: "Merriweather", serif;
+      font-size: 1.2em;
+    }
+  
+    .contact .text-header a {
+      text-decoration: none;
+      color: #fff;
+  
+      &:hover {
+        color: yellow;
+      }
+    }
+  
+    #locations {
+      font-size: 1.6rem;
+  
+      a {
+        text-decoration: none;
+        color: #fff;
+  
+        &:hover {
+          color: yellow;
+        }
+      }
+    }
+  
+    #logo {
+      border-bottom: 2px solid yellow;
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+  /* main */
+  
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    section#one {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      color: #333;
+      line-height: 1.6;
+      margin: 50px 10px;
+      form {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 2px;
+        padding: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  
+  /* one and form */
+  
+  form {
+    .animate-form {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #ef4658;
+      width: 0;
+      height: 2px;
+      -webkit-transition: all ease-in-out 0.15s;
+      -o-transition: all ease-in-out 0.15s;
+      transition: all ease-in-out 0.15s;
+    }
+  
+    &:hover + .animate-form, &:focus + .animate-form {
+      width: 100%;
+    }
+  
+    input {
+      border: 1px solid #ccc;
+      border-radius: 2px;
+    }
+  
+    label {
+      font-style: italic;
+      margin-right: 10px;
+      align-self: center;
+    }
+  
+    input:hover {
+      cursor: pointer;
+      background-color: #f2f2f2;
+    }
+  
+    .animate-container-input {
+      margin-right: 10px;
+      position: relative;
+      flex: 2;
+  
+      #city {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-bottom: 2px solid #ccc;
+      }
+    }
+  }
+  
+  .animate-container-input #city {
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+  
+  form .animate-container-input {
+    .animate-border {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 0;
+      height: 2px;
+      background-color: #ef4658;
+      -webkit-transition: all ease-in-out 0.15s;
+      -o-transition: all ease-in-out 0.15s;
+      transition: all ease-in-out 0.15s;
+    }
+  
+    #city:hover + .animate-border {
+      width: 100%;
+    }
+  }
+  
+  .animate-container-input #city:focus + .animate-border {
+    width: 100%;
+  }
+  
+  form #date {
+    flex: 1;
+  
+    &:hover {
+      outline: none;
+    }
+  }
+  
+  #date:focus {
+    outline: none;
+  }
+  
+  form {
+    #btn {
+      margin-top: 10px;
+      width: 100%;
+      background-color: #ef4658;
+      border: 1px solid #ef4658;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 10px;
+  
+      &:active {
+        box-shadow: 0px 0px 2px #ef4658;
+      }
+    }
+  
+    .input {
+      padding: 10px;
+    }
+  }
+  
+  main section#one #img-container {
+    margin-bottom: 10px;
+    background: url("../View/media/img/4873.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 300px;
+  }
+  
+  section#one #travel-info {
+    margin-top: 20px;
+    background-color: rgb(52, 58, 64);
+    display: grid;
+    grid-template-rows: repeat(2,minmax(200px, 1fr));
+    text-align: center;
+    width: 50%;
+    #pixabay{
+      width: 100%;
+    }
+    #info {
+      color: rgb(212, 211, 211);
+    }
+    .btn {
+      margin-top: 10px;
+      width: 100%;
+      background-color: #ef4658;
+      border: 1px solid #ef4658;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 10px;
+  
+      &:active {
+        box-shadow: 0px 0px 2px #ef4658;
+      }
+    }
+  }
+  
+  /* rainbow color for large display only*/
+  
+  main #rainbow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  #rainbow .color {
+    width: 100px;
+    height: 3px;
+    border-radius: 5px;
+  }
+  
+  main {
+    #rainbow {
+      .yellow {
+        background-color: rgb(255, 238, 0);
+      }
+  
+      .green {
+        background-color: rgb(9, 190, 3);
+      }
+  
+      .skyblue {
+        background-color: rgb(111, 198, 233);
+      }
+  
+      .red {
+        background-color: rgb(236, 24, 24);
+      }
+  
+      .blue {
+        background-color: rgb(7, 71, 168);
+      }
+  
+      .purple {
+        background-color: rgb(113, 7, 134);
+      }
+    }
+  
+    #two {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+  
+      .container-two {
+        margin: 20px 10px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+  
+        .about {
+          color: #fff;
+          align-self: center;
+          justify-self: center;
+          background-color: #ef4658;
+          padding: 100px;
+          line-height: 1.6;
+          font-family: sans-serif;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  /* section two */
+  
+  .about {
+    p {
+      color: #333;
+      font-weight: bold;
+    }
+  
+    a .fa-paper-plane {
+      color: #fff;
+      font-size: 1.6rem;
+      font-style: italic;
+    }
+  }
+  
+  main #two .container-two .background-container {
+    background: url("../View/media/img/555.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  footer {
+    margin: 10px;
+    padding: 10px;
+  
+    /* background-color: rgb(52, 58, 64); */
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  
+    h3 {
+      color: #bbc0c4;
+    }
+  }
+  
+  h5 {
+    color: #bbc0c4;
+  }
+  
+  footer {
+    h3 {
+      font-style: italic;
+    }
+  
+    .social-link {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+  
+      a .fab {
+        font-size: 1.7em;
+        border-radius: 100%;
+        margin: 20px;
+        cursor: pointer;
+      }
+    }
+  
+    a {
+      .fa-github {
+        color: #333;
+      }
+  
+      .fa-linkedin {
+        color: #2867b2;
+      }
+  
+      .fa-twitter {
+        color: #00aced;
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .container{
+      min-width: 100vw;
+      min-height: 100vh;
+      font-size: 1rem;
+    }
+    footer{
+      width: 100%;
+      text-align: center;
+    }
+  }

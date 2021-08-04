@@ -10,14 +10,12 @@ three API's usesed:
 *download the **travel app** project form the repo and follow below:*
 1. install **node/npm**
 2. install **webpack**
-3. initializate and install all package i'm used vai **npm i"
-3. prapare the project for production vai webpack building tools command *npm run buildP*
-4. fire the express server that running on PORT 3000 via *npm run start* or *npm start*
+3. initializate and install all package i'm used vai **npm i**
+3. prapare the project for production vai webpack building tools command **npm run buildP**
+4. fire the express server that running on PORT 3000 via **npm run start** or **npm start**
 
 ## NOTE
 **for extend the project i add simple removetrip button that fired on eventlistener after you get all potential information
 
 ## stratgy
-*geonames[0].lat, geonames[0].lon >> date conditions >> weatherbit forcast (for future trip), weatherbit current (for current trip).* 
-
-![GitHub Logo](/images/logo.png)
+*geonames[0].lat, geonames[0].lon >> date conditions >> weatherbit forcast (for future trip), weatherbit current (for current trip).*

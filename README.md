@@ -13,7 +13,7 @@ three API's usesed:
 3. initializate and install all package i'm used vai **npm i**
 3. prapare the project for production vai webpack building tools command **npm run buildP**
 4. fire the express server that running on PORT 3000 via **npm run start** or **npm start**
-
+5. i use simple test tool with jest just to defined the function and code in app.js and server fire it with **npm run jest**
 ## NOTE
 **for extend the project i add simple removetrip button that fired on eventlistener after you get all potential information
 

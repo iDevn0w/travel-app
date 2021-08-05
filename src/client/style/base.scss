@@ -109,7 +109,7 @@
         position: relative;
         width: 50%;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: center;
         background-color: #fff;
         border-radius: 2px;
@@ -141,6 +141,7 @@
     input {
       border: 1px solid #ccc;
       border-radius: 2px;
+      margin: 5px;
     }
   
     label {
@@ -177,8 +178,8 @@
   form .animate-container-input {
     .animate-border {
       position: absolute;
-      bottom: 0px;
-      left: 0px;
+      bottom: -5px;
+      left: 4px;
       width: 0;
       height: 2px;
       background-color: #ef4658;
@@ -253,6 +254,11 @@
     }
     #info {
       color: rgb(212, 211, 211);
+      ul{
+        li{
+          list-style: none;
+        }
+      }
     }
     .btn {
       margin-top: 10px;

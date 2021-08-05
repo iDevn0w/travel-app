@@ -69,11 +69,7 @@ function handleAPI() {
     })
 }
 
-const info = document.getElementById('info').addEventListener('mouseover', (e) => {
-    e.preventDefault();
-    this.style.color = "#fff";
-})
+
 export {
-    handleAPI,
-    info
+    handleAPI
 }

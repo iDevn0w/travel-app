@@ -4,7 +4,7 @@ import "./style/base.scss";
 import {scrolling} from "./js/scrollToTop";
 import { handleAPI } from "./js/api";
 handleAPI();
-import {info} from "./js/api"
+import {info} from "./js/infoEvent"
 scrolling();
 // registring SW
 if ('serviceWorker' in navigator) {

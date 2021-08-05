@@ -36,13 +36,13 @@ function handleAPI() {
                 fetch(forcastWeatherBitAPI).then(res => res.json()).then(res => {
                     const tempreture = res.data[0].temp;
                     const description = res.data[0].weather.description;
-                    temp.innerHTML = `Nearly Weather: ${tempreture} &#8457, ${description} <img width="20" height"20" src="https://www.weatherbit.io/static/img/icons/${res.data[0].weather.icon}.png" />`
+                    temp.innerHTML = `Nearly Weather: ${tempreture} &#176, ${description} <img width="20" height"20" src="https://www.weatherbit.io/static/img/icons/${res.data[0].weather.icon}.png" />`
                 });
             }else{
                 fetch(currentWeatherBitAPI).then(res => res.json()).then(res => {
                     const tempreture = res.data[0].temp;
                     const description = res.data[0].weather.description;
-                    temp.innerHTML = `weather: ${tempreture} &#8457, ${description} <img width="20" height"20" src="https://www.weatherbit.io/static/img/icons/${res.data[0].weather.icon}.png" />`
+                    temp.innerHTML = `weather: ${tempreture} &#176, ${description} <img width="20" height"20" src="https://www.weatherbit.io/static/img/icons/${res.data[0].weather.icon}.png" />`
                 });
             }
         

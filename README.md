@@ -16,7 +16,7 @@ three API's usesed:
 6. i use simple test tool with jest just to defined the function and code in app.js and server fire it with **npm run jest**
  
 ## NOTE
-**for extend the project i add simple removetrip button that fired on eventlistener after you get all potential information
+**for extend the project i add simple removetrip button that fired on eventlistener after you get all potential information**
 
 ## stratgy
 *geonames[0].lat, geonames[0].lon >> date conditions >> weatherbit forcast (for future trip), weatherbit current (for current trip).*
